@@ -1,0 +1,11 @@
+.heading {
+    font-size: 1.5rem;
+}
+
+.right-container p {
+    font-size: 0.8rem;
+}
+
+.desktop-navbar.active {
+    display: none;
+}

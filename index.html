@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="md:px-24 px-8">
+  <header>
+    <nav class="flex justify-between py-6">
+      <picture>
+        <img src="images/logo.svg">
+      </picture>
+
+      <div class="desktop-navbar hidden md:block">
+        <ul class="flex space-x-8">
+          <li><a>Home</a></li>
+          <li><a>New</a></li>
+          <li><a>Popular</a></li>
+          <li><a>Trending</a></li>
+          <li><a>Categories</a></li>
+        </ul>
+      </div>
+      <div class="md:hidden">
+        <button id="btn-nav" class="pb-8 flex ml-auto mt-4">
+          <img src="images\icon-menu.svg" alt="" srcset="">
+        </button>
+      </div>
+      <div id="desktop-navbar" class="desktop-navbar active md:hidden  absolute bg-white right-0 h-full w-1/2 ">
+        <button id="cls-btn" class="pb-8 flex ml-auto pr-8 mt-4">
+          <img src="images\icon-menu-close.svg" alt="" srcset="">
+        </button>
+
+        <ul class=" flex flex-col space-y-4 px-12">
+          <li><a>Home</a></li>
+          <li><a>New</a></li>
+          <li><a>Popular</a></li>
+          <li><a>Trending</a></li>
+          <li><a>Categories</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <article>
+    <div class="container-1 md:flex md:space-x-5">
+      <div class="left-container space-y-4 md:flex-col">
+        <!-- top -->
+        <picture>
+          <source media="(max-width: 640px)" srcset="images\image-web-3-mobile.jpg" sizes="">
+          <img src="images\image-web-3-desktop.jpg">
+        </picture>
+        <!-- bottom -->
+        <div class="bottom-con flex-row md:flex space-y-8 md:space-y-0">
+          <!-- left -->
+          <div class="text-6xl md:w-1/2 font-extrabold flex items-center">The Bright <br> Future of</br>Web 3.0?</div>
+          <!-- Right -->
+          <div class="md:w-1/2 flex flex-col items-start justify-between space-y-5 md:space-y-0 pb-8">
+            <!-- top -->
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the
+              people.
+              But is it really fulfilling its promise?</p>
+            <!-- bottom -->
+            <button class="uppercase bg-red-600 px-6 text-sm font-bold text-white py-2">read more</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="right-container space-y-10 bg-black text-white md:w-1/2 px-6 py-14 ">
+        <div class="heading text-2xl font-bold text-yellow-300">NEW</div class="heading">
+        <div>
+          <div class="heading">Hydrogen VS Electric Cars</div">
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+
+          <div class="border-y-2 py-8">
+
+            <div class="heading">The Downsides of AI Artistry</div>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+
+          <div>
+
+            <div class="heading">Is VC Funding Drying Up?</div>
+            <p> Private funding by VC firms is down 50% YOY. We take a look at what that means.
+            </p>
+          </div>
+
+        </div>
+      </div>
+  </article>
+
+  <section>
+    <div class="container md:flex py-12 justify-between space-y-6 md:space-y-0">
+      <div class="flex space-x-3">
+        <picture>
+          <img class="h-24" src="images\image-retro-pcs.jpg" alt="" srcset="">
+        </picture>
+        <div class="right-container">
+          <div class="text-2xl font-bold text-gray-300">01</div>
+          <div class="text-xl font-bold">Reviving Retro PCs</div>
+          <p class="text-gray-400 text-xl">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="flex space-x-3">
+        <picture>
+          <img class="h-24" src="images\image-top-laptops.jpg" alt="" srcset="">
+        </picture>
+        <div class="right-container">
+          <div class="text-2xl font-bold text-gray-300">02</div>
+          <div class="text-xl font-bold">Top 10 Laptops of 2022
+          </div>
+
+          <p class="text-gray-400 text-xl">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="flex space-x-3">
+        <picture>
+          <img class="h-24 " src="images\image-gaming-growth.jpg" alt="" srcset="">
+        </picture>
+        <div class="right-container">
+          <div class="text-2xl font-bold text-gray-300">03</div>
+          <div class="text-xl font-bold">
+            The Growth of Gaming
+          </div>
+          <p class="text-gray-400 text-xl">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="attribution pb-12 text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="underline" href="https://www.linkedin.com/in/rrk-sde/">Rajeev Ranjan Kumar</a> with ❤️
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
