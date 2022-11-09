@@ -1,6 +1,6 @@
 const deskbtn = document.getElementById("btn-nav")
 const clsbtn = document.getElementById("cls-btn")
-const active_btn = document.getElementById("desktop-navbar")
+const active_btn = document.getElementById("mobile-navbar")
 
 
 

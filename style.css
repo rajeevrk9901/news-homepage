@@ -9,3 +9,8 @@
 .desktop-navbar.active {
     display: none;
 }
+
+ul li {
+    padding-top: 0.50rem;
+
+}
